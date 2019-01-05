@@ -7,7 +7,7 @@ services:
     restart: always
     image: consol/centos-xfce-vnc
     volumes:
-      - ${DATADIR}:/data
+      - ${DATADIR}/:/data
     ports:
       - "5901:5901"
       - "6901:6901"
@@ -50,7 +50,7 @@ services:
         - /dev/net/tun
       restart: always
       ports:
-      - "9091:9091"
+      - "4000:9091"
       dns:
         - 1.1.1.1
         - 1.0.0.1
