@@ -40,7 +40,7 @@ services:
       - TZ=${TZ}
     volumes:
       - ${DATADIR}/delugeconfig:/config
-      - ${DATADIR}/media/data:/downloads
+      - ${DATADIR}/media:/downloads
     mem_limit: 4096m
 
 
