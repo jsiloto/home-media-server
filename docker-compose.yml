@@ -39,9 +39,9 @@ services:
       - PLEX_GID=${PGID}
       - ADVERTISE_IP="http://SERVER-IP:32400/"
 
-  deluge:
+  deluge-server:
+    container_name: deluge-server
     image: linuxserver/deluge
-    container_name: deluge
     network_mode: host
     environment:
       - PUID=${PUID}
@@ -52,6 +52,5 @@ services:
       - ${DATADIR}/delugeconfig:/config
       - ${DATADIR}/downloads:/downloads
     mem_limit: 4096m
-    restart: always
 
 
