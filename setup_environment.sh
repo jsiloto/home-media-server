@@ -14,7 +14,7 @@ mkdir -p \
     ${DATADIR}/docker/plexms \
     ${DATADIR}/media \
     ${DATADIR}/delugeconfig \
-    ${DATADIR}/media/data \
+    ${DATADIR}/media/ \
     ${DATADIR}/media/tvseries \
     ${DATADIR}/media/movies \
     ${DATADIR}/plex/transcode
