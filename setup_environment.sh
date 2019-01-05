@@ -12,4 +12,5 @@ mkdir -p \
     ${DATADIR}/downloads/completed \
     ${DATADIR}/downloads/incomplete \
     ${DATADIR}/docker/plexms \
-    ${DATADIR}/media
+    ${DATADIR}/media \
+    ${DATADIR}/delugeconfig
