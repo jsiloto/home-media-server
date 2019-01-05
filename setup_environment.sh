@@ -13,4 +13,8 @@ mkdir -p \
     ${DATADIR}/downloads/incomplete \
     ${DATADIR}/docker/plexms \
     ${DATADIR}/media \
-    ${DATADIR}/delugeconfig
+    ${DATADIR}/delugeconfig \
+    ${DATADIR}/media/data \
+    ${DATADIR}/media/tvseries \
+    ${DATADIR}/media/movies \
+    ${DATADIR}/plex/transcode

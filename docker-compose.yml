@@ -39,6 +39,23 @@ services:
       - PLEX_GID=${PGID}
       - ADVERTISE_IP="http://SERVER-IP:32400/"
 
+  plex:
+    container_name: plex
+    restart: always
+    image: linuxserver/plex
+    network_mode: host
+    environment:
+      - VERSION=latest
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+    volumes:
+      - ${DATADIR}/media/data:/config
+      - ${DATADIR}/media/tvseries:/data/tvshows
+      - ${DATADIR}/media/movies:/data/movies
+      - ${DATADIR}/plex/transcode:/transcode
+
+
   deluge-server:
     container_name: deluge-server
     image: linuxserver/deluge
@@ -50,7 +67,7 @@ services:
       - TZ=${TZ}
     volumes:
       - ${DATADIR}/delugeconfig:/config
-      - ${DATADIR}/downloads:/downloads
+      - ${DATADIR}/media/data:/root/Downloads
     mem_limit: 4096m
 
 
