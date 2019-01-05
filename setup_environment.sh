@@ -18,3 +18,5 @@ mkdir -p \
     ${DATADIR}/media/tvseries \
     ${DATADIR}/media/movies \
     ${DATADIR}/plex/transcode
+
+sudo chmod 777 -R ${DATADIR}
