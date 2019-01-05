@@ -50,7 +50,7 @@ services:
         - /dev/net/tun
       restart: always
       ports:
-      - "XXXX:9091"
+      - "9091:9091"
       dns:
         - 1.1.1.1
         - 1.0.0.1
@@ -62,12 +62,6 @@ services:
         - ${DATADIR}/downloads/completed:/data/completed
         - ${DATADIR}/downloads/incomplete:/data/incomplete
       environment:
-        - OPENVPN_PROVIDER=IPVANISH
-        - OPENVPN_USERNAME=ipvanish_username
-        - OPENVPN_PASSWORD=ipvanish_password
-        - OPENVPN_CONFIG="YYYYYYYYYYY"
-        - OPENVPN_OPTS=--inactive 3600 --ping 10 --ping-exit 60
-        - LOCAL_NETWORK=192.168.1.0/24
         - PUID=${PUID}
         - PGID=${PGID}
         - TZ=${TZ}
