@@ -3,7 +3,7 @@
 source environment.sh
 sudo mkdir -p ${DATADIR}
 sudo chmod 777 -R ${DATADIR}
-sudo cp setup_environment.sh /etc/profile.d/
+sudo cp environment.sh /etc/profile.d/
 
 mkdir -p \
     ${DATADIR}/docker/transmission-vpn \
