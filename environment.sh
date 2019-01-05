@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-PUID=1000
-PGID=999
-TZ="America/Sao_Paulo"
-USERDIR="/home/jsiloto"
-DATADIR="/media/data"
+export PUID=1000
+export PGID=999
+export TZ="America/Sao_Paulo"
+export USERDIR="/home/jsiloto"
+export DATADIR="/media/data"
